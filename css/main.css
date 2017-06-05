@@ -158,6 +158,12 @@ textarea {
     background-color: #e0eef7;
     box-shadow: 0 3px 0 #a8b3b9;
 }
+
+/*/------*/
+.buttonBar{
+    display: none;
+}
+/*/----------*/
   /*///////////////////////////////////////////////////////////////////////*/
 
   /*-------------HEADER---------------*/
@@ -367,7 +373,7 @@ nav a:hover{
 .intro{
     background-image: url('../img/bg-intro.png');
    
-    padding-bottom: 195px;
+    padding-bottom: 155px;
     text-align: center;
     color: #fff;
     text-shadow: 2px 3px 7px rgba(0, 0, 0, .5);
@@ -375,7 +381,7 @@ nav a:hover{
 
  h1{
     margin: 0;
-    padding-top: 195px;
+    padding-top: 155px;
     font-size: 46px;
     text-transform: uppercase;
     font-weight: 400;
@@ -665,9 +671,7 @@ button{
     float: left;
     width: 340px;
 }
-.slaid{
-    width: 300px;
-}
+
 /*/////////////////////////////////////////////////////////////////////////*/
 
 /*-----------RECALL--------*/
