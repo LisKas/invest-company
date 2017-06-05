@@ -102,6 +102,7 @@ textarea {
    }
    body{
     color: #444444;
+    font-family: 'Roboto Slab', serif;
    }
   .container{
     max-width: 990px;
@@ -640,7 +641,7 @@ button{
     padding-top: 70px;
    
 }
-.responsive{
+.carousel{
     padding-bottom: 90px;
     border-bottom: 1px solid #e2e2e2;
 }
@@ -663,6 +664,9 @@ button{
 .text-news{
     float: left;
     width: 340px;
+}
+.slaid{
+    width: 300px;
 }
 /*/////////////////////////////////////////////////////////////////////////*/
 
