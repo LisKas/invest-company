@@ -123,7 +123,9 @@ textarea {
     text-decoration: none;
     border-radius: 20px;
 }
-
+.btn:focus{
+    opacity: 0.9;
+}
 .btn-green {
     padding: 10px 20px;
     background-color: #00d47f;
@@ -146,7 +148,10 @@ textarea {
     color: #00d47f;
     font-weight: 600;
 }
-
+.btn-border:hover { 
+color: #fff;
+background-color: #00d47f;
+}
 .btn-lightblue{
     padding: 10px 20px;
     background-color: #7bdbed;
@@ -159,11 +164,30 @@ textarea {
     box-shadow: 0 3px 0 #a8b3b9;
 }
 
+
 /*/------*/
 .buttonBar{
     display: none;
 }
 /*/----------*/
+
+/*/////////////////////////////////////////////////////////////////////////*/
+
+/*-------------ICONS---------------*/
+.icon-right-open:before {
+    color: rgba(0, 0, 0, .2);
+    text-shadow: none;
+}
+.icon-lock:before {
+    color: #fff;
+}
+
+.icon-location:before {
+    padding-right: 10px;
+}
+ .icon-phone::before{
+   padding-right: 10px;
+ }   
   /*///////////////////////////////////////////////////////////////////////*/
 
   /*-------------HEADER---------------*/
@@ -176,11 +200,11 @@ header{
     float: left;
     margin-top: 15px;
 }
-.live_chat{
+.live-chat{
    float: left;
 }
 
-.live_chat ul{
+.live-chat ul{
     
     margin: 0;
     padding: 0;
@@ -188,7 +212,7 @@ header{
     margin-left: 90px;
 }
 
-.live_chat li{
+.live-chat li{
   
     display: inline-block;
    
@@ -198,16 +222,34 @@ header{
     border: 2px solid transparent;
     position: relative;
 }
+.live-chat li::before{
+    position: absolute;
+    content: '';
+    background-image: url('../img/chat.png');
+    width: 32px;
+    height: 27px;
+    top: 10px;
+    left: -35px;
+}
 
+.live-chat li:nth-child(2):before{
+    position: absolute;
+    content: '';
+    background-image: url('../img/forum.png');
+    width: 32px;
+    height: 27px;
+    top: 10px;
+    left: -35px;
+}
 
-.live_chat li:hover{
+.live-chat li:hover{
     border: 2px solid #b7c8dd;
     padding: 5px;
     background-color: #b7c8dd;
     border-radius: 10px;
 }
 
-.live_chat a{
+.live-chat a{
     text-decoration: none;
     font-size:16px; 
     color: #e74c3c;
@@ -215,17 +257,9 @@ header{
     position: relative;
 }
 
-.live_chat li::before{
-    position: absolute;
-    content: '';
-    background-image: url('../img/cloud.png');
-    width: 32px;
-    height: 27px;
-    top: 10px;
-    left: -35px;
-}
 
-.live_chat span{
+
+.live-chat span{
     display: block;
     color: #fff;
     font-size: 10px;
@@ -236,8 +270,8 @@ header{
     position: relative;
     background:  #e2e7ee;
     float: left;
-    border-radius: 10px;
-    width: 45px;
+    border-radius: 4px;
+    width: 50px;
     height: 30px;
     background-repeat: no-repeat;
     margin-left: 65px;
@@ -253,7 +287,7 @@ header{
     margin: 0;
     margin-top: 22px;
     list-style-type: none;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 4px 4px;
     background-color: #e3e7ee;
 }
 
@@ -270,7 +304,15 @@ header{
     left: 10px;
     top: 7px;
 }
-
+.country::after{
+    position: absolute;
+    content: '';
+    border-top: 5px solid rgba(0, 0, 0, .5);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    left: 35px;
+    top: 11px;
+}
 .social{
     float: right;
 }
@@ -327,7 +369,7 @@ header{
     border-left:2px solid #028085;
     height: 9px; 
     top:26px;
-    left: 203px;
+    left: 231px;
 }
 
 .list a {
@@ -452,18 +494,41 @@ h2::after{
 
 .col-50{
     width: 50%;
+    
 }
 
-/*.col-50:last-chaild a{
+.how-it-work p {
     color: #7a9fcc;
     position: relative;
     text-align: center;
-}*/
-/*.col-50 p:nth-chaild(2)::before{
+}
+.how-it-work p::before{
    position: absolute;
    content: '';
    background-image: url('../img/arrow.png');
+   width: 50px;
+    height: 70px;
+    left: 105px;
+    top: 50px;
+}
+/*.col-50:nth-child(2){
+    color: #7a9fcc;
+    position: relative;
+    text-align: center;
+}
+.col-50:nth-child(2):before{
+    position: absolute;
+   content: '';
+   background-image: url('../img/arrow.png');
+   width: 50px;
+    height: 70px;
+    left: 105px;
+    top: 70px;
 }*/
+
+.how-it-work a{
+    margin: 20px 165px 0 165px;
+}
 /*/////////////////////////////////////////////////////////////////////////*/
 
 /*-------------ABOUT US---------------*/
@@ -734,12 +799,67 @@ button{
     top:20px;
 
 }
+/*///////////////////////////////////////////////////////////////////////*/
+form{
+    margin-left: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-33 form p{
+   padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 21px;
+    color: #222222;
+}
+.col-33 form p:before{
+    background-image: none;
+}
+input[type="checkbox"]  {
+  position: relative;
+  top: 14px;
+  left: 5px;
+  display: block;
+  z-index: 1;
+  opacity: 0; 
+}    
+label{
+    position: relative;
+    padding-left: 40px;
+}
 
+input[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00d47f;
+  }
+
+input[type="checkbox"]:checked + label:after {
+   position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    top: 0px;
+    left: 4px;
+    background-color: #00d47f;
+}
+.submit {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*/////////////////////////////////////////////////////////////////////////*/
 
 /*------------INFO-----------*/
 .info{
-
+   background: linear-gradient(to right, rgba(205,191,204,1) 0%, rgba(184,229,244,1) 50%, rgba(209,228,203,1) 100%); 
+   padding-top: 20px;
+   padding-bottom: 75px;
 }
 .info h2{
     margin-left: 0;
@@ -791,7 +911,7 @@ button{
 /*----------FOOTER---------*/
 
 .footer-top{
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 30px;
     background-color: #34495e;
     color: #d6d8db;
@@ -816,6 +936,14 @@ button{
 .col-25 a:hover{
     color: #00d47f;
 }
+ .col-25:nth-child(3){
+    color: #6fc4d5;
+}
+ .col-25:nth-child(3) span:nth-child(2){
+    display: inline-block;
+    padding-top: 20px;
+}
+
 .col-25 p+p{
     color: #6d8496;
 }
@@ -838,14 +966,14 @@ button{
     margin-right: 15px;
 }
 .footer-bottom .list{
-   margin-left: 285px;
+   margin-left: 275px;
 }
 .footer-bottom .list li{
     padding: 0 10px 15px 10px;
 }
 .footer-bottom .list::before{
     top:7px;
-    left: 209px;
+    left: 216px;
 }
 .footer-bottom .list::after{
     position: absolute;
@@ -853,7 +981,7 @@ button{
     border-left:2px solid #028085;
     height: 9px; 
     top: 7px;
-    left: 324px;
+    left: 339px;
 }
 /* ==========================================================================
    Helper classes
