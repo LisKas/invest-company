@@ -14,6 +14,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+
 }
 
 /*
@@ -103,7 +104,6 @@ textarea {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 15px;
 
     display: -webkit-box;
 
@@ -169,15 +169,16 @@ textarea {
 }
 
 
-/*/------*/
+/*/------------------*/
 .buttonBar{
     display: none;
 }
-/*/----------*/
+/*/-----------------*/
 
 /*/////////////////////////////////////////////////////////////////////////*/
 
 /*-------------ICONS---------------*/
+
 .icon-user:before{
     color: #fff;
     text-decoration: none;
@@ -216,16 +217,14 @@ textarea {
 
  .right-control {
 
-    display: block;
     position: relative;
     top: -42px;
     left: 500px;
  }
  .left-control { 
 
-    display: block;
     position: relative;
-    top: -310px;
+    top: -288px;
     left: 475px;
  }
   .right-control:hover{
@@ -241,6 +240,8 @@ textarea {
 header{
     background-color: #c8d6e3;
     color: #fff;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 .logo{
     float: left;
@@ -428,8 +429,11 @@ nav {
     background-color: #f7f7f7;
     width: 100%;
     border-radius: 0 0 10px 10px;
-    position: relative;
+    /*position: relative;
     top: -15px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;*/
 }
 
 nav ul{
@@ -871,7 +875,7 @@ iframe{
     width: 26px;
     height: 19px;
     left: 17px;
-    top: 115px;
+    top: 95px;
     background-repeat: no-repeat;
 }
 .recall .carousel{
@@ -897,7 +901,7 @@ iframe{
     font-size: 14px;
     color: #ddd;
     position: relative;
-    padding-left: 20px;
+    padding-left: 10px;
     
 }
 .adress::before{
@@ -906,7 +910,7 @@ iframe{
     background-image: url('../img/line.png');
     width: 180px;
     height: 10px;
-    left: 20px;
+    left: 5px;
     top:20px;
 
 }
