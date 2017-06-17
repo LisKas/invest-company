@@ -1073,6 +1073,8 @@ input[type="checkbox"]:checked + label:after {
 .footer-bottom{
     background-color: #e4e4e4;
     color: #adadad;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 .logo-ft span{
     font-weight: 600;
@@ -1086,7 +1088,7 @@ input[type="checkbox"]:checked + label:after {
    margin-left: 275px;
 }
 .footer-bottom .list li{
-    padding: 0 10px 15px 10px;
+    padding: 0 10px;
 }
 .footer-bottom .list::before{
     top:7px;
