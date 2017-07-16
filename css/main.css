@@ -463,8 +463,8 @@ nav a:hover{
 
 /*--------INTRO-----------*/
 .intro{
-    background-image: url('../img/BigCity.png');
-   
+    background-image: url('../img/bg-intro.png');
+    background-size: cover;
     padding-bottom: 155px;
     text-align: center;
     color: #fff;
